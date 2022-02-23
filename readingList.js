@@ -12,8 +12,8 @@ const originalReadingList = [
 const addedToReadingList = {id:3, name: 'To Kill a Mockingbird', read: false}
 
 let newReadingList = [...originalReadingList, addedToReadingList]
-// console.log('original reading list:', readingList)
-// console.log('new reading list', newReadingList)
+console.log('original reading list:', originalReadingList)
+console.log('added book 3', newReadingList)
 
 
 // READ: SKIP (NEED REACT)
@@ -29,4 +29,11 @@ let updatedReadingList = originalReadingList.map((list)=>{
   return list
 })
 console.log('original reading list:', originalReadingList)
-console.log('updated reading list', updatedReadingList)
+console.log('updated reading list toggle:', updatedReadingList)
+
+// DELETE
+// a new list with book removed
+let deletedReadingList = [...originalReadingList]
+deletedReadingList.splice(1)
+
+console.log('deleted reading list', deletedReadingList)
