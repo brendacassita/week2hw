@@ -10,12 +10,12 @@ let american = [{id:1, name:'burgers', price:21},{id:2, name:'pizza rolls',price
 /// returns array of formatted strings[] (you choose what these look like)
 
 // const about = (foods)=>{
-//   return mexican.map((f)=>{
-//       return `${f.name} is ${f.price}.00$`
+//   return mexican.map((food)=>{
+//       return `${food.name} is ${food.price}.00$`
 //   })
 // }
 // let foodStrings = about(mexican)
-// console.log('Mexican Menu + Price: ', foodStrings)
+// console.log('Mexican Menu + Prices: ', foodStrings)
  
 
 
@@ -48,8 +48,8 @@ let american = [{id:1, name:'burgers', price:21},{id:2, name:'pizza rolls',price
 //   return [addedFood1,{ id, name, price}]
 // }
 //  const addedFood2 = addFood2(mexican,4,'empanada',7)
-//  console.log('Old Food Menu:', addedFood1)
-//  console.log('New Food Menu & Prices:', addedFood2 )
+//  console.log('Food Menu with tacos added:', addedFood1)
+//  console.log('Added food ID4 & Price:', addedFood2 )
 
 
 
@@ -59,21 +59,21 @@ let american = [{id:1, name:'burgers', price:21},{id:2, name:'pizza rolls',price
 //MAP
 // foods:[{id:number,name:string, price:number},...]
 // id:number,
-// price:number}
+// price:number
 /// returns new array with the price updated with the id given
 
 // const updateFood1=(foods, id, price)=>{
 // //  // Update - Map
-//   let updatedFood1Price = mexican.map((f)=>{
-//     if(f.id === id){
-//       return {...f, price: f.price+10}
+//   let updatedFood1Price = mexican.map((food)=>{
+//     if(food.id === id){
+//       return {...food, price: food.price+10}
 //   }
-//   return f
+//   return food
 // })
 // return updatedFood1Price
 // }
 // console.log('old food price', mexican)
-// console.log('updated food prices: ', updateFood1(mexican, 2, 0))
+// console.log('updated food prices: ', updateFood1(mexican, 1, 31))
 
 
 
@@ -88,11 +88,11 @@ let american = [{id:1, name:'burgers', price:21},{id:2, name:'pizza rolls',price
 /// returns new array with the food item updated with the id given
 
 // const updateFoodItem=(foods, id, food)=>{
-//   let updatedFoodItemName = foods.map((f)=>{
-//     if(f.id === id){
+//   let updatedFoodItemName = foods.map((food)=>{
+//     if(food.id === id){
 //       return food
 //   }
-//   return f
+//   return food
 // })
 // return updatedFoodItemName
 // }
@@ -107,11 +107,11 @@ let american = [{id:1, name:'burgers', price:21},{id:2, name:'pizza rolls',price
 // removes the food with the given the id
 
 // const deleteFood1 = (foods,id)=>{
-//   return foods.filter((f)=>{
-//     return f.id !==1
+//   return foods.filter((food)=>{
+//     return food.id !==id
 //   })
 // }
-// console.log('removed id1: ', deleteFood1(mexican))
+// console.log('removed id1: ', deleteFood1(mexican,1))
 
 
 
@@ -122,10 +122,10 @@ let american = [{id:1, name:'burgers', price:21},{id:2, name:'pizza rolls',price
 // removes the food with price over price given
 
 // const deleteFood2 = (foods,price)=>{
-//   return foods.filter((f)=>{
-//     return f.price === 21
+//   return foods.filter((food)=>{
+//     return food.price !== 21
 //   })
 // }
-// console.log('Foods that are $21.00: ', deleteFood2(mexican))
+// console.log('Foods that are > $21.00: ', deleteFood2(mexican, 21))
 
 
