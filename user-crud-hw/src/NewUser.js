@@ -25,7 +25,7 @@ const NewUser = (props)=>{
 
 
   return(
-    <div style={{border:"4px solid purple", margin:'40px', padding: '20px'}}>
+    <div style={{border:"4px solid hotpink", margin:'40px', padding: '20px'}}>
       <h1>New User Form</h1>
       <form onSubmit={handleSubmit}>
         <p>Email: </p>

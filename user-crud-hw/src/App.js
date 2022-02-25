@@ -58,13 +58,13 @@ function App() {
 }
   const renderUsers = ()=>{
   return users.map((user)=>{
-    return <User key={user.id} {...user} updateUser={updateUser} deleteUserYo={()=> deleteUser(user.id)}/>
+    return <User key={user.id} {...user} updateUser={updateUser} deleteUser={()=> deleteUser(user.id)}/>
   })
 }
 
   
   return (
-    <div className="App" style={{border:'5px solid black', margin:'10px', padding:'10px'}}>
+    <div className="App" style={{border:'5px solid white', margin:'10px', padding:'10px'}}>
       <h1>CRUD USER HW</h1>
       <NewUser addUserCB={addUser}/>
       <button disabled={loading} onClick={getUsers}>{loading ? 'loading':'get users'}</button>

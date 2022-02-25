@@ -13,7 +13,7 @@ const User = (props) => {
         <p>Email: {props.email}</p>
         <p>ID: {props.id}</p>
         <p>Avatar: {props.avatar}</p>
-        <button onClick={() => props.deleteUserYo(props.id)}>delete</button>
+        <button onClick={() => props.deleteUser(props.id)}>delete</button>
         <br/>
         <br/>
     </>
@@ -22,7 +22,7 @@ const User = (props) => {
   };
 
   return (
-    <div style={{ border: "3px solid purple", margin: "20px" }}>
+    <div style={{ border: "4px solid hotpink", margin: "20px" }}>
       <br/>
         <button onClick={()=>setShowForm(!showForm)}>{showForm ? 'cancel' : 'edit'}</button>
         {showForm ? <EditUser {...props} /> : renderUser()}

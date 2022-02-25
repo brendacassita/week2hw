@@ -23,17 +23,18 @@ const EditUser = (props)=>{
 
 
   return(
-    <div style={{border:"2px solid pink", margin:'40px', padding: '20px'}}>
-      <h1>edit user form</h1>
+    <div style={{border:"4px solid purple", margin:'40px', padding: '20px'}}>
+      <h1>Edit User Form</h1>
       <form onSubmit={handleSubmit}>
-        <p>email</p>
+        <p>Email</p>
         <input value={email} onChange={(e)=>{setEmail(e.target.value)}} />
-        <p>first name</p>
+        <p>First Name</p>
         <input value={first_name} onChange={(e)=>{set_first_name(e.target.value)}} />
-        <p>last name</p>
+        <p>Last Name</p>
         <input value={last_name} onChange={(e)=>{set_last_name(e.target.value)}} />
-        <p>avatar</p>
+        <p>Avatar</p>
         <input value={foo} onChange={(e)=>{bar(e.target.value)}} />
+        <br/>
         <br/>
         <button>edit user</button>
       </form>
