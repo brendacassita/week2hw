@@ -12,7 +12,7 @@ function App() {
   const [error, setError] = useState(null)
 
 
-  const getUsers = () => {
+  const getUsers = ()=>{
     setLoading(true)
     setError(null)
     axios
