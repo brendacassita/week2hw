@@ -21,7 +21,7 @@ const NewBooks = () =>{
   }
 
   return(
-    <div>
+    <div className="App" style={{border:'3px solid hotpink', margin:'10px', padding:'10px'}}>
       <h1>Add New Books: </h1>
       <Link to='/bookslist'>Books List</Link>
       <form onSubmit={handleSubmit}>

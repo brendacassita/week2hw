@@ -5,7 +5,7 @@ import { DataContext } from "../Providers/DataProvider"
 const BooksList = () => {
   const bookData = useContext(DataContext)
   return (
-    <div>
+    <div className="App" style={{border:'5px solid hotpink', margin:'10px', padding:'10px'}}>
       <h1>Books List: </h1>
       <Link to='/newbooks'>New Books</Link>
       

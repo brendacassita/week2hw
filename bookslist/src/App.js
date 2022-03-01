@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App" style={{border:'5px solid black', margin:'10px', padding:'10px'}}>
+    <div className="App" style={{border:'5px solid purple', margin:'10px', padding:'100px'}}>
       <h1>Books App</h1>
       <nav
         style={{
